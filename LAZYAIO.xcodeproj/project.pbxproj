@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53AF91D355205ECF9FA53A39 /* Pods_LAZYAIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037B732D94258B32B8A79AAB /* Pods_LAZYAIO.framework */; };
+		FF01355C25633E4E004D5457 /* adminOnlyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01355B25633E4E004D5457 /* adminOnlyAccess.swift */; };
+		FF0CA0FC254E6084001BFC14 /* footsiteSelectPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CA0FB254E6084001BFC14 /* footsiteSelectPopup.swift */; };
+		FF0CA0FF254E609C001BFC14 /* shopifySelectPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CA0FE254E609C001BFC14 /* shopifySelectPopup.swift */; };
+		FF0CA103254E865C001BFC14 /* customSiteSelectPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CA102254E865C001BFC14 /* customSiteSelectPopup.swift */; };
+		FF1099F8254A6137003C9D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1099F7254A6137003C9D9E /* AppDelegate.swift */; };
+		FF1099FA254A6137003C9D9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1099F9254A6137003C9D9E /* SceneDelegate.swift */; };
+		FF1099FC254A6137003C9D9E /* loginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1099FB254A6137003C9D9E /* loginScreen.swift */; };
+		FF1099FF254A6137003C9D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1099FD254A6137003C9D9E /* Main.storyboard */; };
+		FF109A01254A6137003C9D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF109A00254A6137003C9D9E /* Assets.xcassets */; };
+		FF109A04254A6137003C9D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF109A02254A6137003C9D9E /* LaunchScreen.storyboard */; };
+		FF109A0E254A688F003C9D9E /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF109A0D254A688F003C9D9E /* mainScreen.swift */; };
+		FF109A12254A8746003C9D9E /* mainTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF109A11254A8746003C9D9E /* mainTaskCell.swift */; };
+		FF109A15254A875A003C9D9E /* successMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF109A14254A875A003C9D9E /* successMainCell.swift */; };
+		FF1F1DD325511EBD00C3EFD2 /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F1DD225511EBD00C3EFD2 /* taskCell.swift */; };
+		FF24C64C255522DD0049F188 /* captchaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24C64B255522DD0049F188 /* captchaScreen.swift */; };
+		FF5B4E80254FA48A00B6B0A8 /* addProxiesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */; };
+		FF7F9443254B223000C5E6FF /* taskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F9442254B223000C5E6FF /* taskScreen.swift */; };
+		FF7F9446254B224000C5E6FF /* proxyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F9445254B224000C5E6FF /* proxyScreen.swift */; };
+		FF7F944A254B225200C5E6FF /* profileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F9449254B225200C5E6FF /* profileScreen.swift */; };
+		FF8313132562FBE8002C223A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8313122562FBE8002C223A /* WidgetKit.framework */; };
+		FF8313152562FBE8002C223A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8313142562FBE8002C223A /* SwiftUI.framework */; };
+		FF8313182562FBE8002C223A /* LAZYAIO_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8313172562FBE8002C223A /* LAZYAIO_Widget.swift */; };
+		FF83131B2562FBEA002C223A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF83131A2562FBEA002C223A /* Assets.xcassets */; };
+		FF83131D2562FBEA002C223A /* LAZYAIO_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF8313192562FBE8002C223A /* LAZYAIO_Widget.intentdefinition */; };
+		FF83131E2562FBEA002C223A /* LAZYAIO_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF8313192562FBE8002C223A /* LAZYAIO_Widget.intentdefinition */; };
+		FF8313212562FBEA002C223A /* LAZYAIO_WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF8313112562FBE8002C223A /* LAZYAIO_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF90D58B255269B800BEE9AA /* getTasksInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90D58A255269B800BEE9AA /* getTasksInfo.swift */; };
+		FF9F084F2553BC6200B6FB24 /* createProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F084E2553BC6200B6FB24 /* createProfile.swift */; };
+		FFB7A3E5254BB5AE00330DC1 /* createTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */; };
+		FFCAE3D2255685B100731601 /* getProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAE3D1255685B100731601 /* getProfileInfo.swift */; };
+		FFDF2E07254D1CBA00F6313E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFDF2E06254D1CBA00F6313E /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF83131F2562FBEA002C223A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1099EC254A6137003C9D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8313102562FBE8002C223A;
+			remoteInfo = LAZYAIO_WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF8313222562FBEA002C223A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF8313212562FBEA002C223A /* LAZYAIO_WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		037B732D94258B32B8A79AAB /* Pods_LAZYAIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LAZYAIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A0E28B11CF3C8F515CC692 /* Pods-LAZYAIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAZYAIO.debug.xcconfig"; path = "Target Support Files/Pods-LAZYAIO/Pods-LAZYAIO.debug.xcconfig"; sourceTree = "<group>"; };
+		F4CB6E80C052F0FF64C27A1F /* Pods-LAZYAIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAZYAIO.release.xcconfig"; path = "Target Support Files/Pods-LAZYAIO/Pods-LAZYAIO.release.xcconfig"; sourceTree = "<group>"; };
+		FF01355B25633E4E004D5457 /* adminOnlyAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminOnlyAccess.swift; sourceTree = "<group>"; };
+		FF0CA0FB254E6084001BFC14 /* footsiteSelectPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footsiteSelectPopup.swift; sourceTree = "<group>"; };
+		FF0CA0FE254E609C001BFC14 /* shopifySelectPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopifySelectPopup.swift; sourceTree = "<group>"; };
+		FF0CA102254E865C001BFC14 /* customSiteSelectPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customSiteSelectPopup.swift; sourceTree = "<group>"; };
+		FF1099F4254A6137003C9D9E /* LAZY AIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LAZY AIO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1099F7254A6137003C9D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1099F9254A6137003C9D9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF1099FB254A6137003C9D9E /* loginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
+		FF1099FE254A6137003C9D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF109A00254A6137003C9D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF109A03254A6137003C9D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF109A05254A6137003C9D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF109A0D254A688F003C9D9E /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+		FF109A11254A8746003C9D9E /* mainTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTaskCell.swift; sourceTree = "<group>"; };
+		FF109A14254A875A003C9D9E /* successMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = successMainCell.swift; sourceTree = "<group>"; };
+		FF1F1DD225511EBD00C3EFD2 /* taskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
+		FF24C64B255522DD0049F188 /* captchaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = captchaScreen.swift; sourceTree = "<group>"; };
+		FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addProxiesScreen.swift; sourceTree = "<group>"; };
+		FF7F9442254B223000C5E6FF /* taskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskScreen.swift; sourceTree = "<group>"; };
+		FF7F9445254B224000C5E6FF /* proxyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proxyScreen.swift; sourceTree = "<group>"; };
+		FF7F9449254B225200C5E6FF /* profileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileScreen.swift; sourceTree = "<group>"; };
+		FF8313112562FBE8002C223A /* LAZYAIO_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LAZYAIO_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8313122562FBE8002C223A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FF8313142562FBE8002C223A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FF8313172562FBE8002C223A /* LAZYAIO_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAZYAIO_Widget.swift; sourceTree = "<group>"; };
+		FF8313192562FBE8002C223A /* LAZYAIO_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LAZYAIO_Widget.intentdefinition; sourceTree = "<group>"; };
+		FF83131A2562FBEA002C223A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF83131C2562FBEA002C223A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF90D58A255269B800BEE9AA /* getTasksInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTasksInfo.swift; sourceTree = "<group>"; };
+		FF9F084E2553BC6200B6FB24 /* createProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createProfile.swift; sourceTree = "<group>"; };
+		FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createTaskScreen.swift; sourceTree = "<group>"; };
+		FFCAE3D1255685B100731601 /* getProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getProfileInfo.swift; sourceTree = "<group>"; };
+		FFDF2E06254D1CBA00F6313E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1099F1254A6137003C9D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AF91D355205ECF9FA53A39 /* Pods_LAZYAIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF83130E2562FBE8002C223A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8313152562FBE8002C223A /* SwiftUI.framework in Frameworks */,
+				FF8313132562FBE8002C223A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D14B13E709215E2230D4832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037B732D94258B32B8A79AAB /* Pods_LAZYAIO.framework */,
+				FF8313122562FBE8002C223A /* WidgetKit.framework */,
+				FF8313142562FBE8002C223A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F7D2B1BAA8C660FE858CC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0E28B11CF3C8F515CC692 /* Pods-LAZYAIO.debug.xcconfig */,
+				F4CB6E80C052F0FF64C27A1F /* Pods-LAZYAIO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF1099EB254A6137003C9D9E = {
+			isa = PBXGroup;
+			children = (
+				FF1099F6254A6137003C9D9E /* LAZYAIO */,
+				FF8313162562FBE8002C223A /* LAZYAIO_Widget */,
+				FF1099F5254A6137003C9D9E /* Products */,
+				E8F7D2B1BAA8C660FE858CC0 /* Pods */,
+				6D14B13E709215E2230D4832 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1099F5254A6137003C9D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1099F4254A6137003C9D9E /* LAZY AIO.app */,
+				FF8313112562FBE8002C223A /* LAZYAIO_WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1099F6254A6137003C9D9E /* LAZYAIO */ = {
+			isa = PBXGroup;
+			children = (
+				FF1099F7254A6137003C9D9E /* AppDelegate.swift */,
+				FF1099F9254A6137003C9D9E /* SceneDelegate.swift */,
+				FF01355B25633E4E004D5457 /* adminOnlyAccess.swift */,
+				FF90D58A255269B800BEE9AA /* getTasksInfo.swift */,
+				FFCAE3D1255685B100731601 /* getProfileInfo.swift */,
+				FF24C64B255522DD0049F188 /* captchaScreen.swift */,
+				FF9F084E2553BC6200B6FB24 /* createProfile.swift */,
+				FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */,
+				FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */,
+				FF0CA0FE254E609C001BFC14 /* shopifySelectPopup.swift */,
+				FF0CA0FB254E6084001BFC14 /* footsiteSelectPopup.swift */,
+				FF0CA102254E865C001BFC14 /* customSiteSelectPopup.swift */,
+				FF1F1DD225511EBD00C3EFD2 /* taskCell.swift */,
+				FF1099FB254A6137003C9D9E /* loginScreen.swift */,
+				FF109A0D254A688F003C9D9E /* mainScreen.swift */,
+				FF7F9442254B223000C5E6FF /* taskScreen.swift */,
+				FF7F9445254B224000C5E6FF /* proxyScreen.swift */,
+				FF7F9449254B225200C5E6FF /* profileScreen.swift */,
+				FF109A11254A8746003C9D9E /* mainTaskCell.swift */,
+				FF109A14254A875A003C9D9E /* successMainCell.swift */,
+				FF1099FD254A6137003C9D9E /* Main.storyboard */,
+				FF109A02254A6137003C9D9E /* LaunchScreen.storyboard */,
+				FF109A00254A6137003C9D9E /* Assets.xcassets */,
+				FFDF2E06254D1CBA00F6313E /* GoogleService-Info.plist */,
+				FF109A05254A6137003C9D9E /* Info.plist */,
+			);
+			path = LAZYAIO;
+			sourceTree = "<group>";
+		};
+		FF8313162562FBE8002C223A /* LAZYAIO_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FF8313172562FBE8002C223A /* LAZYAIO_Widget.swift */,
+				FF8313192562FBE8002C223A /* LAZYAIO_Widget.intentdefinition */,
+				FF83131A2562FBEA002C223A /* Assets.xcassets */,
+				FF83131C2562FBEA002C223A /* Info.plist */,
+			);
+			path = LAZYAIO_Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1099F3254A6137003C9D9E /* LAZYAIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF109A08254A6137003C9D9E /* Build configuration list for PBXNativeTarget "LAZYAIO" */;
+			buildPhases = (
+				07DC10E65876812034AD3EDB /* [CP] Check Pods Manifest.lock */,
+				FF1099F0254A6137003C9D9E /* Sources */,
+				FF1099F1254A6137003C9D9E /* Frameworks */,
+				FF1099F2254A6137003C9D9E /* Resources */,
+				E8F5777742984C3732BB3039 /* [CP] Embed Pods Frameworks */,
+				FF8313222562FBEA002C223A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8313202562FBEA002C223A /* PBXTargetDependency */,
+			);
+			name = LAZYAIO;
+			productName = LAZYAIO;
+			productReference = FF1099F4254A6137003C9D9E /* LAZY AIO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF8313102562FBE8002C223A /* LAZYAIO_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8313252562FBEA002C223A /* Build configuration list for PBXNativeTarget "LAZYAIO_WidgetExtension" */;
+			buildPhases = (
+				FF83130D2562FBE8002C223A /* Sources */,
+				FF83130E2562FBE8002C223A /* Frameworks */,
+				FF83130F2562FBE8002C223A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LAZYAIO_WidgetExtension;
+			productName = LAZYAIO_WidgetExtension;
+			productReference = FF8313112562FBE8002C223A /* LAZYAIO_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1099EC254A6137003C9D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FF1099F3254A6137003C9D9E = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					FF8313102562FBE8002C223A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = FF1099EF254A6137003C9D9E /* Build configuration list for PBXProject "LAZYAIO" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1099EB254A6137003C9D9E;
+			productRefGroup = FF1099F5254A6137003C9D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1099F3254A6137003C9D9E /* LAZYAIO */,
+				FF8313102562FBE8002C223A /* LAZYAIO_WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1099F2254A6137003C9D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF109A04254A6137003C9D9E /* LaunchScreen.storyboard in Resources */,
+				FFDF2E07254D1CBA00F6313E /* GoogleService-Info.plist in Resources */,
+				FF109A01254A6137003C9D9E /* Assets.xcassets in Resources */,
+				FF1099FF254A6137003C9D9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF83130F2562FBE8002C223A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF83131B2562FBEA002C223A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DC10E65876812034AD3EDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LAZYAIO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F5777742984C3732BB3039 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LAZYAIO/Pods-LAZYAIO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LAZYAIO/Pods-LAZYAIO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LAZYAIO/Pods-LAZYAIO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1099F0254A6137003C9D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB7A3E5254BB5AE00330DC1 /* createTaskScreen.swift in Sources */,
+				FF0CA0FF254E609C001BFC14 /* shopifySelectPopup.swift in Sources */,
+				FF0CA103254E865C001BFC14 /* customSiteSelectPopup.swift in Sources */,
+				FF0CA0FC254E6084001BFC14 /* footsiteSelectPopup.swift in Sources */,
+				FF109A0E254A688F003C9D9E /* mainScreen.swift in Sources */,
+				FF9F084F2553BC6200B6FB24 /* createProfile.swift in Sources */,
+				FF1099FC254A6137003C9D9E /* loginScreen.swift in Sources */,
+				FF7F944A254B225200C5E6FF /* profileScreen.swift in Sources */,
+				FF83131E2562FBEA002C223A /* LAZYAIO_Widget.intentdefinition in Sources */,
+				FFCAE3D2255685B100731601 /* getProfileInfo.swift in Sources */,
+				FF1099F8254A6137003C9D9E /* AppDelegate.swift in Sources */,
+				FF1099FA254A6137003C9D9E /* SceneDelegate.swift in Sources */,
+				FF1F1DD325511EBD00C3EFD2 /* taskCell.swift in Sources */,
+				FF7F9443254B223000C5E6FF /* taskScreen.swift in Sources */,
+				FF5B4E80254FA48A00B6B0A8 /* addProxiesScreen.swift in Sources */,
+				FF109A15254A875A003C9D9E /* successMainCell.swift in Sources */,
+				FF01355C25633E4E004D5457 /* adminOnlyAccess.swift in Sources */,
+				FF7F9446254B224000C5E6FF /* proxyScreen.swift in Sources */,
+				FF109A12254A8746003C9D9E /* mainTaskCell.swift in Sources */,
+				FF24C64C255522DD0049F188 /* captchaScreen.swift in Sources */,
+				FF90D58B255269B800BEE9AA /* getTasksInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF83130D2562FBE8002C223A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF83131D2562FBEA002C223A /* LAZYAIO_Widget.intentdefinition in Sources */,
+				FF8313182562FBE8002C223A /* LAZYAIO_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF8313202562FBEA002C223A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8313102562FBE8002C223A /* LAZYAIO_WidgetExtension */;
+			targetProxy = FF83131F2562FBEA002C223A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF1099FD254A6137003C9D9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1099FE254A6137003C9D9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF109A02254A6137003C9D9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF109A03254A6137003C9D9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF109A06254A6137003C9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF109A07254A6137003C9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF109A09254A6137003C9D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A0E28B11CF3C8F515CC692 /* Pods-LAZYAIO.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = LAZYAIO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supremo.LAZYAIO;
+				PRODUCT_NAME = "LAZY AIO";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF109A0A254A6137003C9D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4CB6E80C052F0FF64C27A1F /* Pods-LAZYAIO.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = LAZYAIO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supremo.LAZYAIO;
+				PRODUCT_NAME = "LAZY AIO";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF8313232562FBEA002C223A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = LAZYAIO_Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supremo.LAZYAIO.LAZYAIO-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF8313242562FBEA002C223A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = LAZYAIO_Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supremo.LAZYAIO.LAZYAIO-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1099EF254A6137003C9D9E /* Build configuration list for PBXProject "LAZYAIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF109A06254A6137003C9D9E /* Debug */,
+				FF109A07254A6137003C9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF109A08254A6137003C9D9E /* Build configuration list for PBXNativeTarget "LAZYAIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF109A09254A6137003C9D9E /* Debug */,
+				FF109A0A254A6137003C9D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8313252562FBEA002C223A /* Build configuration list for PBXNativeTarget "LAZYAIO_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8313232562FBEA002C223A /* Debug */,
+				FF8313242562FBEA002C223A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1099EC254A6137003C9D9E /* Project object */;
+}
