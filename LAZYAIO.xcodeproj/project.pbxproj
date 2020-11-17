@@ -144,6 +144,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF01356125636FF2004D5457 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FF01355B25633E4E004D5457 /* adminOnlyAccess.swift */,
+				FF9F084E2553BC6200B6FB24 /* createProfile.swift */,
+				FF1099FB254A6137003C9D9E /* loginScreen.swift */,
+				FF109A0D254A688F003C9D9E /* mainScreen.swift */,
+				FF7F9442254B223000C5E6FF /* taskScreen.swift */,
+				FF7F9445254B224000C5E6FF /* proxyScreen.swift */,
+				FF7F9449254B225200C5E6FF /* profileScreen.swift */,
+				FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */,
+				FF24C64B255522DD0049F188 /* captchaScreen.swift */,
+				FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FF013564256370F3004D5457 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF109A11254A8746003C9D9E /* mainTaskCell.swift */,
+				FF1F1DD225511EBD00C3EFD2 /* taskCell.swift */,
+				FF109A14254A875A003C9D9E /* successMainCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF01356525637154004D5457 /* Pop-ups */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CA0FE254E609C001BFC14 /* shopifySelectPopup.swift */,
+				FF0CA0FB254E6084001BFC14 /* footsiteSelectPopup.swift */,
+				FF0CA102254E865C001BFC14 /* customSiteSelectPopup.swift */,
+			);
+			path = "Pop-ups";
+			sourceTree = "<group>";
+		};
+		FF0135662563716C004D5457 /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				FF90D58A255269B800BEE9AA /* getTasksInfo.swift */,
+				FFCAE3D1255685B100731601 /* getProfileInfo.swift */,
+			);
+			path = Infos;
+			sourceTree = "<group>";
+		};
 		FF1099EB254A6137003C9D9E = {
 			isa = PBXGroup;
 			children = (
@@ -169,24 +215,10 @@
 			children = (
 				FF1099F7254A6137003C9D9E /* AppDelegate.swift */,
 				FF1099F9254A6137003C9D9E /* SceneDelegate.swift */,
-				FF01355B25633E4E004D5457 /* adminOnlyAccess.swift */,
-				FF90D58A255269B800BEE9AA /* getTasksInfo.swift */,
-				FFCAE3D1255685B100731601 /* getProfileInfo.swift */,
-				FF24C64B255522DD0049F188 /* captchaScreen.swift */,
-				FF9F084E2553BC6200B6FB24 /* createProfile.swift */,
-				FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */,
-				FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */,
-				FF0CA0FE254E609C001BFC14 /* shopifySelectPopup.swift */,
-				FF0CA0FB254E6084001BFC14 /* footsiteSelectPopup.swift */,
-				FF0CA102254E865C001BFC14 /* customSiteSelectPopup.swift */,
-				FF1F1DD225511EBD00C3EFD2 /* taskCell.swift */,
-				FF1099FB254A6137003C9D9E /* loginScreen.swift */,
-				FF109A0D254A688F003C9D9E /* mainScreen.swift */,
-				FF7F9442254B223000C5E6FF /* taskScreen.swift */,
-				FF7F9445254B224000C5E6FF /* proxyScreen.swift */,
-				FF7F9449254B225200C5E6FF /* profileScreen.swift */,
-				FF109A11254A8746003C9D9E /* mainTaskCell.swift */,
-				FF109A14254A875A003C9D9E /* successMainCell.swift */,
+				FF0135662563716C004D5457 /* Infos */,
+				FF01356525637154004D5457 /* Pop-ups */,
+				FF013564256370F3004D5457 /* Cells */,
+				FF01356125636FF2004D5457 /* Screens */,
 				FF1099FD254A6137003C9D9E /* Main.storyboard */,
 				FF109A02254A6137003C9D9E /* LaunchScreen.storyboard */,
 				FF109A00254A6137003C9D9E /* Assets.xcassets */,
