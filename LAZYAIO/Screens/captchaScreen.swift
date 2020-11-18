@@ -21,6 +21,11 @@ class captchaScreen: UIViewController {
             captchaView.load(request)
             self.captchaScreenView.addSubview(captchaView)
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
+            tap.numberOfTapsRequired = 1
+            view.addGestureRecognizer(tap)
+
+        
         captchaScreenView.layer.cornerRadius = 10
         captchaScreenView.layer.borderWidth = 1.0
         captchaScreenView.layer.borderColor = UIColor.gray.cgColor
@@ -43,5 +48,8 @@ class captchaScreen: UIViewController {
             view.backgroundColor = .black
         }
     }
-
+    
+    @objc func tapped() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

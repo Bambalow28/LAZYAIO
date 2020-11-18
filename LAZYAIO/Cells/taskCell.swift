@@ -190,7 +190,7 @@ class taskCell: UITableViewCell, WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.taskStatus.text = "Page has Loaded"
+        self.taskStatus.text = "Page Loaded"
         self.taskStatus.textColor = UIColor.systemGreen
         
         sendWebhook()

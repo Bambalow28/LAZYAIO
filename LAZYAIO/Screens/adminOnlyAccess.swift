@@ -23,6 +23,10 @@ class adminOnlyAccess: UIViewController {
         genKeyBtn.layer.cornerRadius = 10
     }
     
+    @IBAction func logoutClicked(_ sender: Any) {
+        transitionToLogin()
+    }
+    
     func transitionToLogin() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loginController = storyBoard.instantiateViewController(withIdentifier: "loginScreen") as! loginScreen
@@ -60,5 +64,19 @@ class adminOnlyAccess: UIViewController {
     func keyGenerator(length: Int) -> String {
       let keys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
       return String((0..<length).map{ _ in keys.randomElement()! })
+    }
+    
+    func activeUsers() {
+        let ref = db.collection("adminAccess")
+        
+        ref.getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                }
+        }
     }
 }
