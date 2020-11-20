@@ -128,7 +128,7 @@ class taskCell: UITableViewCell, WKNavigationDelegate {
                 case .success(let value):
                     let jsonResponse = JSON(value)
                     
-                    for item in jsonResponse["products_and_categories"]["Accessories"].arrayValue
+                    for item in jsonResponse["products_and_categories"]["new"].arrayValue
                     {
                         let itemName = item["name"].stringValue
                         let itemID = item["id"].stringValue
@@ -222,4 +222,5 @@ class taskCell: UITableViewCell, WKNavigationDelegate {
             let task = URLSession.shared.dataTask(with: request)
             task.resume()
     }
+
 }

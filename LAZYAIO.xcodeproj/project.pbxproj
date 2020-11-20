@@ -35,6 +35,7 @@
 		FF83131E2562FBEA002C223A /* LAZYAIO_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF8313192562FBE8002C223A /* LAZYAIO_Widget.intentdefinition */; };
 		FF8313212562FBEA002C223A /* LAZYAIO_WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF8313112562FBE8002C223A /* LAZYAIO_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FF90D58B255269B800BEE9AA /* getTasksInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90D58A255269B800BEE9AA /* getTasksInfo.swift */; };
+		FF9BBD692566153F00027624 /* editTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BBD682566153F00027624 /* editTaskScreen.swift */; };
 		FF9F084F2553BC6200B6FB24 /* createProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F084E2553BC6200B6FB24 /* createProfile.swift */; };
 		FFB7A3E5254BB5AE00330DC1 /* createTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */; };
 		FFCAE3D2255685B100731601 /* getProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAE3D1255685B100731601 /* getProfileInfo.swift */; };
@@ -98,6 +99,7 @@
 		FF83131A2562FBEA002C223A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF83131C2562FBEA002C223A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF90D58A255269B800BEE9AA /* getTasksInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTasksInfo.swift; sourceTree = "<group>"; };
+		FF9BBD682566153F00027624 /* editTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editTaskScreen.swift; sourceTree = "<group>"; };
 		FF9F084E2553BC6200B6FB24 /* createProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createProfile.swift; sourceTree = "<group>"; };
 		FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createTaskScreen.swift; sourceTree = "<group>"; };
 		FFCAE3D1255685B100731601 /* getProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getProfileInfo.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				FFB7A3E4254BB5AE00330DC1 /* createTaskScreen.swift */,
 				FF24C64B255522DD0049F188 /* captchaScreen.swift */,
 				FF5B4E7F254FA48A00B6B0A8 /* addProxiesScreen.swift */,
+				FF9BBD682566153F00027624 /* editTaskScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				FF7F9446254B224000C5E6FF /* proxyScreen.swift in Sources */,
 				FF109A12254A8746003C9D9E /* mainTaskCell.swift in Sources */,
 				FF24C64C255522DD0049F188 /* captchaScreen.swift in Sources */,
+				FF9BBD692566153F00027624 /* editTaskScreen.swift in Sources */,
 				FF90D58B255269B800BEE9AA /* getTasksInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

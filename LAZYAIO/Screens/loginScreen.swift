@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class loginScreen: UIViewController {
     
     @IBOutlet weak var keyInput: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    
+    let db = Firestore.firestore()
     
     //Set Status Bar Elements to Light
     override var preferredStatusBarStyle: UIStatusBarStyle
@@ -58,6 +61,7 @@ class loginScreen: UIViewController {
     }
 
     @IBAction func loginClicked(_ sender: Any) {
+        keyAuthentication()
         
         switch(keyInput.text!) {
         
@@ -89,28 +93,6 @@ class loginScreen: UIViewController {
                 self.loginBtn.layer.backgroundColor = UIColor.systemIndigo.cgColor
             }
         }
-        
-//        if (keyInput.text! == "testing") {
-//
-//            loginBtn.setTitle("Success!", for: .normal)
-//            loginBtn.layer.backgroundColor = UIColor.systemGreen.cgColor
-//
-//            let sec = 1.0
-//            DispatchQueue.main.asyncAfter(deadline: .now() + sec) {
-//                self.transitionToMain()
-//            }
-//
-//        }
-//        else {
-//            loginBtn.setTitle("Invalid Key!", for: .normal)
-//            loginBtn.layer.backgroundColor = UIColor.systemRed.cgColor
-//
-//            let sec = 1.0
-//            DispatchQueue.main.asyncAfter(deadline: .now() + sec) {
-//                self.loginBtn.setTitle("Login", for: .normal)
-//                self.loginBtn.layer.backgroundColor = UIColor.systemIndigo.cgColor
-//            }
-//        }
     }
     
     func transitionToMain() {
@@ -137,5 +119,16 @@ class loginScreen: UIViewController {
         self.present(navController, animated: true, completion: nil)
     }
     
+    func keyAuthentication() {
+        db.collection("adminAccess").getDocuments() { (keys, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for key in keys!.documents {
+                    print("Key: \(key)")
+                }
+            }
+        }
+    }
 }
 

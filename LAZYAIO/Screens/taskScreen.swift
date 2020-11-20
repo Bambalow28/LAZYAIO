@@ -107,6 +107,10 @@ class taskScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.createTasks()
     }
     
+    @IBAction func editTask(_ sender: Any) {
+        self.transitionToEditTask()
+    }
+    
     @IBAction func createProfileClicked(_ sender: Any) {
         self.transitionToCreateProfile()
     }
@@ -196,6 +200,13 @@ class taskScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         captchaScreenController.modalTransitionStyle = .crossDissolve
         
         self.present(captchaScreenController, animated: true, completion: nil)
+    }
+    
+    func transitionToEditTask() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let editTaskController = storyBoard.instantiateViewController(withIdentifier: "editTaskScreen") as! editTaskScreen
+        
+        self.navigationController?.pushViewController(editTaskController, animated: true)
     }
     
     func getTasks() {
